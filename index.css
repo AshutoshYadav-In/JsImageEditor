@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.Container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2f3f5;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+}
+.owl-item {
+    display: flex;
+    justify-content: center;
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.owl-next {
+    font-size: 2.6rem !important;
+    transition: 0.3s;
+}
+
+.owl-prev {
+    font-size: 2.6rem !important;
+    transition: 0.3s;
+}
+.Imagecon {
+    width: 220px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+.Imagecon p{
+position: absolute;
+top: 50%;
+border: 1px dashed black;
+outline: none;
+background-color: white;
+min-height: 20px;
+cursor: pointer;
+font-size: 12px;
+}
+.Imagecon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.owl-carousel {
+    width: 220px;
+
+}
+
+.Editorials {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Editorials >:nth-child(1){
+    height: 30px;
+}
+.Editorials :nth-child(2){
+    width: 100%;
+}
+.Editorials :nth-child(3){
+  height: 20px;
+}
+.Editorials :nth-child(4){
+    display: flex;
+    gap: 1rem;
+}
+.Editorials :nth-child(4) i{
+    transition: 0.2s;
+    font-size: 1.1rem;
+}
+.Editorials :nth-child(4) i:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.Editorials >:nth-child(5){
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+}
+.Editorials >:nth-child(5) button{
+    border: none;
+    background-color:  rgb(29,155,240);
+    color: white;
+    padding: 0.3rem 0.3rem;
+    border-radius: 5px;
+    transition: 0.2s;
+} 
+.Editorials >:nth-child(5) button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.Editorials >:nth-child(5) input{
+    width: 20%;
+}
+.Editorials >:nth-child(6){
+   border: none;
+   background-color:  rgb(29,155,240);
+   color: white;
+   padding: 0.3rem 0.3rem;
+   border-radius: 5px;
+   transition: 0.2s;
+  }
+  .Editorials :nth-child(6):hover{
+    opacity: 0.8;
+    cursor: pointer;
+  }
+.Editorials select :nth-child(1) {
+    font-family: "Roboto", sans-serif;
+}
+
+.Editorials select :nth-child(2) {
+    font-family: "Lato", sans-serif;
+}
+
+.Editorials select :nth-child(3) {
+    font-family: "Poppins", sans-serif;
+}
+
+.Editorials select :nth-child(4) {
+    font-family: "Open Sans", sans-serif;
+}
+.Sortable{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    cursor:grabbing;
+    padding:1rem;
+    border: 1px solid black;
+}
+.Sortable .img1,
+.Sortable .img2,
+.Sortable .img3 {
+    width: 200px;
+    height: 60px;
+    overflow: hidden;
+    padding: 0.3rem;
+    border: 1px solid black;
+}
+.Sortable img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 500px) {
+.Container{
+    flex-direction: column;
+    gap: 1rem;
+}
+}
